@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="RU Player - A premium, hardware-accelerated WPF media player for Windows. Enjoy seamless playback for all video and audio formats with a beautiful dark interface.">
+    <title>RU Player - Premium Media Player for Windows</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="assets/app_icon.png" alt="RU Player Logo" class="logo-img">
+                <span class="logo-text">RU <span class="accent-text">Player</span></span>
+            </div>
+            <nav class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#interface">Interface</a>
+                <a href="#download" class="btn btn-secondary">Download Now</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg-gradient"></div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="badge">Windows App v1.0.0</div>
+                <h1 class="hero-title">Experience Media Like <br><span class="gradient-text">Never Before</span></h1>
+                <p class="hero-subtitle">RU Player is a premium, hardware-accelerated media player designed for Windows. Plays all formats—from 4K Ultra HD videos to high-fidelity audio tracks—with a gorgeous dark mode interface.</p>
+                <div class="hero-actions">
+                    <a href="../RU Player Setup.exe" class="btn btn-primary btn-large download-link" download>
+                        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+                        </svg>
+                        Download Installer
+                    </a>
+                    <a href="#features" class="btn btn-tertiary">
+                        Learn More
+                        <svg class="btn-icon-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="hero-specs">
+                    <span class="spec-item"><span class="bullet">✓</span> Plays MP4, MKV, MP3, WAV...</span>
+                    <span class="spec-item"><span class="bullet">✓</span> GPU Hardware Accelerated</span>
+                    <span class="spec-item"><span class="bullet">✓</span> Auto-Update System</span>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="mockup-wrapper">
+                    <div class="mockup-glow"></div>
+                    <img src="assets/ruplayer_mockup.png" alt="RU Player App Interface Mockup" class="app-mockup">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Built for Performance. Styled for Elegance.</h2>
+                <p class="section-subtitle">Discover a player that blends advanced media decoding with intuitive UI customizability.</p>
+            </div>
+            
+            <div class="features-grid">
+                <!-- Card 1 -->
+                <div class="feature-card">
+                    <div class="icon-wrapper bg-indigo">
+                        <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M23 7l-7 5 7 5V7zM1 5h11a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H1a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-card-title">Hardware Acceleration</h3>
+                    <p class="feature-card-desc">Decodes high-bitrate 4K videos smoothly using your CPU & GPU resources (DXVA/D3D11VA), reducing frame drops and system lag.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="feature-card">
+                    <div class="icon-wrapper bg-blue">
+                        <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 18V5l12-2v13M9 9h12M9 15c0 1.66-1.34 3-3 3s-3-1.34-3-3 1.34-3 3-3 3 1.34 3 3zm12-2c0 1.66-1.34 3-3 3s-3-1.34-3-3 1.34-3 3-3 3 1.34 3 3z"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-card-title">Unified Media Player</h3>
+                    <p class="feature-card-desc">Seamless support for both video and audio. Playing audio files opens a premium dark layout showing album/music info with direct controls.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="feature-card">
+                    <div class="icon-wrapper bg-cyan">
+                        <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2zM12 7v6M9 10h6"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-card-title">Context track Controls</h3>
+                    <p class="feature-card-desc">Right-click anywhere on the media to select multiple audio tracks, subtitle feeds, adjust aspect ratios, or tweak speed in real-time.</p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="feature-card">
+                    <div class="icon-wrapper bg-violet">
+                        <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-card-title">Auto Update Dialogs</h3>
+                    <p class="feature-card-desc">Features an built-in asynchronous updater. When updates are published, the app shows a borderless popup overlay to download and install silently.</p>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="feature-card">
+                    <div class="icon-wrapper bg-purple">
+                        <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="2" width="20" height="8" rx="2" ry="2"/>
+                            <rect x="2" y="14" width="20" height="8" rx="2" ry="2"/>
+                            <line x1="6" y1="6" x2="6.01" y2="6"/>
+                            <line x1="6" y1="18" x2="6.01" y2="18"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-card-title">Windows Integration</h3>
+                    <p class="feature-card-desc">Durable file association system that lets you double-click any `.mp4`, `.mkv`, or `.mp3` file to launch RU Player instantly as your default player.</p>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="feature-card">
+                    <div class="icon-wrapper bg-pink">
+                        <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="12 2 2 7 12 12 22 7 12 2"/>
+                            <polyline points="2 17 12 22 22 17"/>
+                            <polyline points="2 12 12 17 22 12"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-card-title">Video Color Filters</h3>
+                    <p class="feature-card-desc">Fine-tune video quality using built-in filters. Real-time adjust sliders are available to configure contrast, brightness, saturation, and hue.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interface section (Interactive demonstration) -->
+    <section id="interface" class="interface">
+        <div class="container">
+            <div class="split-layout">
+                <div class="layout-visual">
+                    <div class="app-window-frame">
+                        <div class="frame-header">
+                            <span class="frame-logo-title">
+                                <img src="assets/app_icon.png" class="frame-icon-img" alt="">
+                                <span class="frame-title">RU Player - Playing Media</span>
+                            </span>
+                            <div class="frame-controls">
+                                <span class="win-btn min">&#8211;</span>
+                                <span class="win-btn max">&#9633;</span>
+                                <span class="win-btn close">&#215;</span>
+                            </div>
+                        </div>
+                        <div class="frame-body">
+                            <div class="player-view">
+                                <div class="audio-only-view" id="audioOnlyView">
+                                    <div class="audio-note">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="#6366F1" stroke-width="2">
+                                            <path d="M9 18V5l12-2v13M9 9h12M9 15c0 1.66-1.34 3-3 3s-3-1.34-3-3 1.34-3 3-3 3 1.34 3 3zm12-2c0 1.66-1.34 3-3 3s-3-1.34-3-3 1.34-3 3-3 3 1.34 3 3z"/>
+                                        </svg>
+                                    </div>
+                                    <span class="audio-title">Lofi_Beats_2026.mp3</span>
+                                    <span class="audio-mode">Audio Playback Mode</span>
+                                </div>
+                                <div class="video-overlay-view" id="videoOnlyView">
+                                    <div class="video-play-btn">
+                                        <svg viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M8 5v14l11-7z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="update-popup-mock" id="updateMock">
+                                    <div class="popup-box">
+                                        <span class="popup-title">New Update Available!</span>
+                                        <span class="popup-subtitle">Version 1.0.1 (Current: 1.0.0)</span>
+                                        <div class="popup-bar">
+                                            <div class="progress-fill"></div>
+                                        </div>
+                                        <div class="popup-actions">
+                                            <button class="popup-btn flat" onclick="togglePopup(false)">Later</button>
+                                            <button class="popup-btn accent" onclick="startDownload()">Update Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="layout-content">
+                    <h2 class="section-title">See It in Action</h2>
+                    <p class="section-desc">Interactive features react to your media type instantly. Toggle the buttons below to preview how the user interface adjusts itself.</p>
+                    
+                    <div class="toggle-panel">
+                        <button class="toggle-btn active" id="btnShowVideo" onclick="switchView('video')">
+                            Video Playback
+                        </button>
+                        <button class="toggle-btn" id="btnShowAudio" onclick="switchView('audio')">
+                            Audio Playback
+                        </button>
+                        <button class="toggle-btn" id="btnShowUpdate" onclick="switchView('update')">
+                            Auto Update Popup
+                        </button>
+                    </div>
+
+                    <div class="details-box">
+                        <div class="details-item active" id="details-video">
+                            <h4>Video Player</h4>
+                            <p>Plays 4K Ultra HD files smoothly using native VLC hardware rendering. Custom right-click options allow selecting subtitles, tracks, and adjusting ratios.</p>
+                        </div>
+                        <div class="details-item" id="details-audio">
+                            <h4>Audio Overlay Mode</h4>
+                            <p>Hides the black screen completely, replacing it with an active media details grid, keeping controls accessible while providing clean visual feedback.</p>
+                        </div>
+                        <div class="details-item" id="details-update">
+                            <h4>Airspace-Free Update Dialogs</h4>
+                            <p>Launches a borderless modal updater that completely bypasses Windows airspace click interception issues. User can cancel, download, and install silently.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="download-section">
+        <div class="container">
+            <div class="download-card">
+                <div class="download-card-glow"></div>
+                <h2 class="download-title">Get RU Player Today</h2>
+                <p class="download-desc">Start experiencing modern, distraction-free media playback on Windows. It is completely free, open-source, and does not require complex setup configurations.</p>
+                <div class="download-btns">
+                    <a href="../RU Player Setup.exe" class="btn btn-primary download-link" download>
+                        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+                        </svg>
+                        Download for Windows (x64)
+                    </a>
+                </div>
+                <div class="download-details">
+                    <span>File size: ~128 MB</span>
+                    <span class="separator">•</span>
+                    <span>OS: Windows 10 / 11 (64-bit)</span>
+                    <span class="separator">•</span>
+                    <span>Version: 1.0.0</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-wrap">
+                <div class="footer-brand">
+                    <img src="assets/app_icon.png" alt="RU Player Logo" class="footer-logo">
+                    <span>RU Player</span>
+                </div>
+                <div class="footer-links" style="display: flex; gap: 15px;">
+                    <a href="terms.html" style="font-size: 0.85rem; color: var(--text-muted);">Terms &amp; Conditions</a>
+                    <a href="privacy.html" style="font-size: 0.85rem; color: var(--text-muted);">Privacy Policy</a>
+                </div>
+                <p class="footer-copy">&copy; 2026 RUHI Applications. Developed with C#, WPF, and LibVLCSharp.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive script -->
+    <script>
+        function switchView(viewName) {
+            // Remove active state from all buttons
+            document.getElementById('btnShowVideo').classList.remove('active');
+            document.getElementById('btnShowAudio').classList.remove('active');
+            document.getElementById('btnShowUpdate').classList.remove('active');
+
+            // Remove active state from details
+            document.getElementById('details-video').classList.remove('active');
+            document.getElementById('details-audio').classList.remove('active');
+            document.getElementById('details-update').classList.remove('active');
+
+            // Hide/Show elements in mockup
+            const audioView = document.getElementById('audioOnlyView');
+            const videoView = document.getElementById('videoOnlyView');
+            const updateMock = document.getElementById('updateMock');
+
+            audioView.style.display = 'none';
+            videoView.style.display = 'none';
+            updateMock.style.display = 'none';
+
+            if (viewName === 'video') {
+                document.getElementById('btnShowVideo').classList.add('active');
+                document.getElementById('details-video').classList.add('active');
+                videoView.style.display = 'flex';
+            } else if (viewName === 'audio') {
+                document.getElementById('btnShowAudio').classList.add('active');
+                document.getElementById('details-audio').classList.add('active');
+                audioView.style.display = 'flex';
+            } else if (viewName === 'update') {
+                document.getElementById('btnShowUpdate').classList.add('active');
+                document.getElementById('details-update').classList.add('active');
+                videoView.style.display = 'flex';
+                updateMock.style.display = 'flex';
+            }
+        }
+
+        function togglePopup(show) {
+            document.getElementById('updateMock').style.display = show ? 'flex' : 'none';
+        }
+
+        function startDownload() {
+            const fill = document.querySelector('.progress-fill');
+            fill.style.width = '0%';
+            
+            let progress = 0;
+            const interval = setInterval(() => {
+                progress += 5;
+                fill.style.width = progress + '%';
+                if (progress >= 100) {
+                    clearInterval(interval);
+                    setTimeout(() => {
+                        alert("Update downloaded and launched! Player shutting down.");
+                        switchView('video');
+                        fill.style.width = '0%';
+                    }, 400);
+                }
+            }, 100);
+        }
+    </script>
+</body>
+</html>

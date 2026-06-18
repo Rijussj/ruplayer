@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - RU Player</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html" style="display: flex; align-items: center;">
+                    <img src="assets/app_icon.png" alt="RU Player Logo" class="logo-img">
+                    <span class="logo-text">RU <span class="accent-text">Player</span></span>
+                </a>
+            </div>
+            <nav class="nav-links">
+                <a href="index.html">Back to Home</a>
+                <a href="../RU Player Setup.exe" class="btn btn-secondary" download>Download Now</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Document Section -->
+    <main class="doc-page">
+        <div class="doc-container">
+            <div class="doc-card">
+                <h1 class="doc-title">Privacy Policy</h1>
+                <p class="doc-subtitle">Last updated: June 18, 2026</p>
+                
+                <div class="doc-content">
+                    <p>At RU Player, we prioritize your privacy. This Privacy Policy describes how the application handles data when you use the software on your desktop computer.</p>
+                    
+                    <h3>1. Local Playback &amp; Zero Data Collection</h3>
+                    <p>RU Player operates completely on your local machine. We do not track, collect, or store any personal information, media playback history, file names, volume parameters, or visual filters. All playback details, playlists, and settings are saved locally on your device (in your local registry or AppData folders) and are never uploaded to our servers.</p>
+                    
+                    <h3>2. Network Connectivity (Update Checker)</h3>
+                    <p>The application connects to the internet solely for the purpose of checking for software updates:</p>
+                    <ul>
+                        <li>**Update Probing**: On startup, the application sends a secure HTTP request to our designated API endpoint (npoint.io) to fetch the latest version information. No personal identifiers or device telemetry details are sent during this request.</li>
+                        <li>**Download**: If you choose to install an update, the player downloads the setup installer `.exe` from the direct download URL provided in the version metadata (e.g. GitHub Releases).</li>
+                    </ul>
+                    
+                    <h3>3. Third-Party Libraries</h3>
+                    <p>We utilize the **LibVLCSharp** library to parse and play media. While the engine handles network streaming files if you explicitly request them (e.g. streaming a network stream URL), the library does not collect or transmit analytics data in the background.</p>
+                    
+                    <h3>4. Windows System Permissions</h3>
+                    <p>The application requests system-level integrations which are handled locally:
+                        <ul>
+                            <li>**Registry Access**: Necessary to set default file associations so that Windows knows to launch RU Player when double-clicking video/audio files.</li>
+                            <li>**Shortcut Creation**: Writes a shortcut file (`.lnk`) to your Desktop and Start Menu for ease of access.</li>
+                        </ul>
+                    </p>
+
+                    <h3>5. Children's Privacy</h3>
+                    <p>Because our software does not collect, store, or transmit any data of any kind, it is fully compliant with children's privacy regulations. We do not gather or target information from children under the age of 13.</p>
+
+                    <h3>6. Contact Us</h3>
+                    <p>If you have any questions or concerns regarding this Privacy Policy, please feel free to reach out to us at <a href="mailto:srzapps@gmail.com" style="color: var(--accent);">srzapps@gmail.com</a> or <a href="mailto:Support@myruhi.in" style="color: var(--accent);">Support@myruhi.in</a>.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-wrap">
+                <div class="footer-brand">
+                    <img src="assets/app_icon.png" alt="RU Player Logo" class="footer-logo">
+                    <span>RU Player</span>
+                </div>
+                <div class="footer-links" style="display: flex; gap: 15px;">
+                    <a href="terms.html" style="font-size: 0.85rem; color: var(--text-muted);">Terms &amp; Conditions</a>
+                    <a href="privacy.html" style="font-size: 0.85rem; color: var(--text-primary); font-weight: 500;">Privacy Policy</a>
+                </div>
+                <p class="footer-copy">&copy; 2026 RUHI Applications. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
