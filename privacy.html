@@ -36,27 +36,32 @@
                 <p class="doc-subtitle">Last updated: June 18, 2026</p>
                 
                 <div class="doc-content">
-                    <p>At RU Player, we prioritize your privacy. This Privacy Policy describes how the application handles data when you use the software on your desktop computer.</p>
+                    <p>At RU Player, we prioritize your privacy. This Privacy Policy describes how the application handles data when you use the software on your desktop computer (Windows) and mobile device (Android).</p>
                     
                     <h3>1. Local Playback &amp; Zero Data Collection</h3>
-                    <p>RU Player operates completely on your local machine. We do not track, collect, or store any personal information, media playback history, file names, volume parameters, or visual filters. All playback details, playlists, and settings are saved locally on your device (in your local registry or AppData folders) and are never uploaded to our servers.</p>
+                    <p>RU Player operates completely on your local machine. We do not track, collect, or store any personal information, media playback history, file names, volume parameters, or visual filters. All playback details, playlists, and settings are saved locally on your device (in your local registry/AppData folders on Windows, or secure local storage on Android) and are never uploaded to our servers.</p>
                     
-                    <h3>2. Network Connectivity (Update Checker)</h3>
-                    <p>The application connects to the internet solely for the purpose of checking for software updates:</p>
-                    <ul>
-                        <li>**Update Probing**: On startup, the application sends a secure HTTP request to our designated API endpoint (npoint.io) to fetch the latest version information. No personal identifiers or device telemetry details are sent during this request.</li>
-                        <li>**Download**: If you choose to install an update, the player downloads the setup installer `.exe` from the direct download URL provided in the version metadata (e.g. GitHub Releases).</li>
-                    </ul>
-                    
-                    <h3>3. Third-Party Libraries</h3>
-                    <p>We utilize the **LibVLCSharp** library to parse and play media. While the engine handles network streaming files if you explicitly request them (e.g. streaming a network stream URL), the library does not collect or transmit analytics data in the background.</p>
-                    
-                    <h3>4. Windows System Permissions</h3>
-                    <p>The application requests system-level integrations which are handled locally:
+                    <h3>2. Platform System Permissions</h3>
+                    <p>The application requests system-level integrations which are handled strictly locally:
                         <ul>
-                            <li>**Registry Access**: Necessary to set default file associations so that Windows knows to launch RU Player when double-clicking video/audio files.</li>
-                            <li>**Shortcut Creation**: Writes a shortcut file (`.lnk`) to your Desktop and Start Menu for ease of access.</li>
+                            <li><strong>Windows App</strong>: Accesses the registry to set default file type associations (so that double-clicking video/audio files opens them in RU Player) and writes desktop/Start Menu shortcut files.</li>
+                            <li><strong>Android App</strong>: Requests storage read permissions (<code>READ_MEDIA_VIDEO</code>, <code>READ_MEDIA_AUDIO</code>, or <code>READ_EXTERNAL_STORAGE</code>) to scan local media files and present them in the media gallery. If permissions are denied, it uses the System Document Picker to let you choose files manually. No local files or media identifiers are transmitted.</li>
                         </ul>
+                    </p>
+
+                    <h3>3. Network Connectivity</h3>
+                    <ul>
+                        <li><strong>Windows Update Checker</strong>: On startup, the Windows app queries a secure API endpoint (npoint.io) to check for updates. No personal identifiers or device telemetry details are sent during this request. If an update is selected, the player downloads the setup installer from a direct URL (e.g. GitHub Releases).</li>
+                        <li><strong>Android App</strong>: The Android application runs 100% offline and does not contain any background trackers, analytics, or ads.</li>
+                    </ul>
+
+                    <h3>4. Third-Party Engines</h3>
+                    <p>We utilize industry-standard, secure media pipelines:
+                        <ul>
+                            <li><strong>Windows App</strong> uses the <strong>LibVLCSharp</strong> engine.</li>
+                            <li><strong>Android App</strong> uses Google's modern <strong>Android Media3 ExoPlayer</strong> engine.</li>
+                        </ul>
+                        Both engines run entirely offline on your device to parse and play local media files without telemetry or analytics tracking.
                     </p>
 
                     <h3>5. Children's Privacy</h3>
